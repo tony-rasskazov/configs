@@ -34,7 +34,7 @@ endif
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
 if has("autocmd")
-  filetype plugin indent on
+  filetype plugin on
 endif
 
 " The following are commented out as they cause vim to behave a lot
