@@ -99,3 +99,5 @@ export CROSS_COMPILE=arm-v5te-linux-gnueabi-
 
 export PATH=$PATH:/opt/OSELAS.Toolchain-1.99.3/arm-v5te-linux-gnueabi/gcc-4.3.2-glibc-2.8-binutils-2.18-kernel-2.6.27-sanitized/bin/:/home/tony/.gem/ruby/1.8/bin/
 
+
+#!!!
