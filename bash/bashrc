@@ -76,6 +76,7 @@ alias ll='ls -lFh'
 alias la='ls -Alh'
 alias l='ls -CFh'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias grep='grep --color=auto'
 alias cwd='cd $CWD'
 alias rl_='rm *.log'
@@ -93,11 +94,11 @@ export PS_USER_COLOR=$'\E[1;32m'
 export PS_HOST_COLOR=$'\E[1;33m'
 export PS_SYM_COLOR=$'\E[0m'
 
-export SKIPPER_LOG=/home/tony/log/
-export SKIPPER_CONF=/home/tony/work/dev_tony_build/conf/root.conf.xml
-export CROSS_COMPILE=arm-v5te-linux-gnueabi-
+#export SKIPPER_LOG=/home/tony/log/
+#export SKIPPER_CONF=/home/tony/work/dev_tony_build/conf/root.conf.xml
 
-export PATH=$PATH:/opt/OSELAS.Toolchain-1.99.3/arm-v5te-linux-gnueabi/gcc-4.3.2-glibc-2.8-binutils-2.18-kernel-2.6.27-sanitized/bin/:/home/tony/.gem/ruby/1.8/bin/
+#export CROSS_COMPILE=arm-v5te-linux-gnueabi-
+#export PATH=$PATH:/opt/OSELAS.Toolchain-1.99.3/arm-v5te-linux-gnueabi/gcc-4.3.2-glibc-2.8-binutils-2.18-kernel-2.6.27-sanitized/bin/:/home/tony/.gem/ruby/1.8/bin/
 
 
 #!!!
