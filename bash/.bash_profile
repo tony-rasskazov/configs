@@ -7,7 +7,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=5001
-HISTFILESIZE=20001
+HISTFILESIZE=10001
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -69,14 +69,6 @@ svn_dirty() {
 
 
 
-if [ "$color_prompt" = yes ]; then
-    PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(svn_dirty)$ "
-#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[1;33m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
-
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -97,6 +89,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+CWD=/Users/tony/Work/monitorr2d2
 
 # some more ls aliases
 alias ll='ls -lFh'
@@ -121,6 +115,34 @@ export PS_USER_COLOR=$'\E[1;32m'
 export PS_HOST_COLOR=$'\E[1;33m'
 export PS_SYM_COLOR=$'\E[0m'
 
+#export PATH=/Users/tony/Qt5.3.2/5.3/clang_64/bin:/Users/tony/Qt5.3.2/5.3:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+
+#. /opt/local/share/bash-completion/bash_completion
+
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+      . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+#if [ -f ~/config/bash/git-prompt.sh ]; then
+      #source ~/configs/bash/git-prompt.sh
+#      $source ~/config/bash/git-prompt.sh
+#      . /opt/local/etc/profile.d/bash_completion.sh
+#fi
+
+. /opt/local/share/git/git-prompt.sh
+
+if [ "$color_prompt" = yes ]; then
+    PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]$(__git_ps1 " (%s)") \$ '
+# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[1;33m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+
 #export SKIPPER_LOG=/home/tony/log/
 #export SKIPPER_CONF=/home/tony/work/dev_tony_build/conf/root.conf.xml
 
@@ -131,4 +153,13 @@ export PS_SYM_COLOR=$'\E[0m'
 #!!!
 
 #!!!
+
+
+##
+# Your previous /Users/tony/.bash_profile file was backed up as /Users/tony/.bash_profile.macports-saved_2015-05-06_at_21:11:09
+##
+
+# MacPorts Installer addition on 2015-05-06_at_21:11:09: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
 
