@@ -132,9 +132,10 @@ fi
 #fi
 
 . /opt/local/share/git/git-prompt.sh
+. /opt/local/share/git/contrib/completion/git-completion.bash
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]$(__git_ps1 " (%s)") \$ '
+    PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\e[35m$(__git_ps1 " [%s]")\[\033[m\]\$ '
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[1;33m\]\w\[\033[00m\]\$ '
 else
