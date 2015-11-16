@@ -1,0 +1,2 @@
+"\e[1;2D": history-search-backward
+"\e[1;2C": history-search-forward
