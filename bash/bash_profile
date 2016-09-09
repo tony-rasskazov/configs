@@ -2,8 +2,8 @@ HISTCONTROL=ignoredups:ignorespace
 
 shopt -s histappend
 
-HISTSIZE=16384
-HISTFILESIZE=65535
+HISTSIZE=100000
+#HISTFILESIZE=65535
 
 shopt -s checkwinsize
 
@@ -52,7 +52,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 #CWD=/Users/tony/Work/monitorr2d2
-CWD=/Users/tony/Work/baobab
+CWD=/Users/tony/Workspace
 
 
 # some more ls aliases
@@ -82,19 +82,12 @@ export PS_SYM_COLOR=$'\E[0m'
 export PATH=/opt/local/bin:/opt/local/sbin:/Users/tony/Qt/5.5/clang_64/bin:$PATH
 #export PATH=/Users/tony/Qt/5.5/clang_64/bin:$PATH
 
-. ~/cfg/bash_completion.sh
-. ~/cfg/git-prompt.sh
-. ~/cfg/git-completion.bash
+. ~/Workspace/configs/bash/bash_completion.sh
+. ~/Workspace/configs/bash/git-prompt.sh
+. ~/Workspace/configs/bash/git-completion.bash
 
 
 if [ "$color_prompt" = yes ]; then
-    
-#
-#    PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\e[35m$(__git_ps1 " [%s]")\[\033[m\]\$\[\033[0m\] '
-
-  #  PS1='$PS_HOST_COLOR \u@\h:\w$(__git_ps1 " (%s)")\$ '
-   
-
   green=$(tput setaf 2)
   blue=$(tput setaf 4)
   cyan=$(tput setaf 6)
@@ -103,36 +96,9 @@ if [ "$color_prompt" = yes ]; then
   bold=$(tput bold)
   reset=$(tput sgr0)
 
-   PS1='\[$cyan\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$yellow\]\w\[$reset\]\[$pink\]$(__git_ps1 " [%s]")\[$reset\]\$ '
- 
-   #PS1='\[$green\]\h\[$reset\]:\[$blue\]\w\[$reset\]\$ ' 
-   #PS1='\[$green$bold\]\h\[$reset\]:\[$blue$bold\]\w\[$reset\]\$ ' 
-   #PS1='\u@\h:\w$(__git_ps1 " (%s)")\$ '
-    #PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\e[35m$(__git_ps1 " [%s]")\[\033[m\]\$ '
-    #PS1='\u@\h:\w\e$(__git_ps1 " [%s]")\$'
-
+  PS1='\[$cyan\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$yellow\]\w\[$reset\]\[$pink\]$(__git_ps1 " [%s]")\[$reset\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
 unset color_prompt force_color_prompt
-
-
-# MacPorts Installer addition on 2015-05-06_at_21:11:09: adding an appropriate PATH variable for use with MacPorts.
-#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
-##
-# Your previous /Users/tony/.bash_profile file was backed up as /Users/tony/.bash_profile.macports-saved_2015-10-26_at_04:52:41
-##
-
-# MacPorts Installer addition on 2015-10-26_at_04:52:41: adding an appropriate PATH variable for use with MacPorts.
-#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
-# Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
-#PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/Library/Frameworks/Python.framework/Versions/3.4/include/python3.4m:${PATH}"
-#export PATH
