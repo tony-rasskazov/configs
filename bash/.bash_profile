@@ -56,7 +56,7 @@ CWD=/Users/tony/Workspace
 
 
 # some more ls aliases
-alias ll='ls -lFh'
+alias ll='ls -laFh'
 alias la='ls -Alh'
 alias l='ls -CFh'
 alias ..='cd ..'
@@ -113,5 +113,5 @@ fi
 
 #unset color_prompt force_color_prompt
 
-export HOMEBREW_GITHUB_API_TOKEN="dbf4207b3420e1fde311cbfeb0627f35ded8a3e8"
+source ~/homebrew_github_api_token
 
