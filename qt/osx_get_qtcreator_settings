@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#On Mac OS, the files are located in ~/.config/QtProject and ~/Library/Application Support/QtProject/Qt Creator.
+
+cp -r ~/.config/QtProject ./
+
+
+
+
