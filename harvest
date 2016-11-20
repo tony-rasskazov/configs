@@ -2,7 +2,8 @@
 #
 # Harvest configs 
 
-rsync -tr ~/.config ./osx/
+rsync -tr ~/.config osx/
 rsync -tr ~/.vimrc vim/
+rsync -tr ~/.bash_profile bash/
 
 
