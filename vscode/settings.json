@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabSize": 4,
+    "editor.renderIndentGuides": true,
+    "files.autoSave": "onWindowChange",
+    "html.format.wrapLineLength": 0,
+    "typescript.format.insertSpaceAfterCommaDelimiter": false,
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+    "terminal.integrated.shellArgs.osx": ["-l"]
+}
