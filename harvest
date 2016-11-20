@@ -7,3 +7,7 @@ rsync -tr ~/.vimrc vim/
 rsync -tr ~/.bash_profile bash/
 rsync -tr ~/.config/QtProject qt/
 
+
+rsync -tr $HOME/Library/Application\ Support/Code/User/settings.json vscode/
+rsync -tr $HOME/.vscode vscode/
+rsync -tr $HOME/Workspace/.vscode vscode/Workspace/
