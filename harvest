@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#
+# Harvest configs 
+
+rsync -tr ~/.config ./osx/
+rsync -tr ~/.vimrc vim/
+
+
