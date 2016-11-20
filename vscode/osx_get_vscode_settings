@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
 cp $HOME/Library/Application\ Support/Code/User/settings.json ./
+cp -r $HOME/.vscode ./
+cp -r $HOME/Workspace/.vscode ./Workspace/
+
+

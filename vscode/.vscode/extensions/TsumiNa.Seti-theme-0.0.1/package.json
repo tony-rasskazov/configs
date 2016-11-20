@@ -1,0 +1,26 @@
+{
+	"name": "Seti-theme",
+	"description": "Seti_UI Port for VS Code",
+	"version": "0.0.1",
+	"publisher": "TsumiNa",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Seti",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Seti.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f15d6127-5ea1-42c9-b6ac-b10e914370cf",
+		"publisherId": "dff7c415-af47-4ba5-b8ab-db86d572f273",
+		"publisherDisplayName": "TsumiNa"
+	}
+}

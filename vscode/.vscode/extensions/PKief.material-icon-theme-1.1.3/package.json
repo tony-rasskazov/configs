@@ -1,0 +1,47 @@
+{
+	"name": "material-icon-theme",
+	"displayName": "Material Icon Theme",
+	"description": "Material Icon Theme",
+	"version": "1.1.3",
+	"publisher": "PKief",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "material-icon-theme",
+				"label": "Material Icon Theme",
+				"path": "./fileicons/material-icons.json"
+			}
+		]
+	},
+	"keywords": [
+		"icons",
+		"theme",
+		"material",
+		"icon-theme",
+		"customization"
+	],
+	"homepage": "https://github.com/PKief/vscode-extension-material-icon-theme/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PKief/vscode-extension-material-icon-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/PKief/vscode-extension-material-icon-theme/issues"
+	},
+	"icon": "images/material-icon-theme_icon.png",
+	"galleryBanner": {
+		"color": "#e0e0e0",
+		"theme": "light"
+	},
+	"__metadata": {
+		"id": "5db78037-f674-459f-a236-db622c427c5b",
+		"publisherId": "f9e5bc2f-fea1-4075-917f-d83e01e69f56",
+		"publisherDisplayName": "Philipp Kief"
+	}
+}

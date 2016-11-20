@@ -1,0 +1,86 @@
+{
+    "configurations": [{
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtCore.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtGui.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtNetwork.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWidgets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtSql.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQml.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuick.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtSvg.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaWidgets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DCore.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DExtras.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DInput.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DLogic.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DQuick.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DQuickExtras.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DQuickInput.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DQuickRender.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/Qt3DRender.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtBluetooth.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtPositioning.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtPrintSupport.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuickControls2.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTest.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtQuickWidgets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtScript.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtScriptTools.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtSensors.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtSerialPort.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtUiPlugin.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebChannel.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebEngine.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebEngineCore.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebEngineWidgets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebSockets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtWebView.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtXml.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtXmlPatterns.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtDesigner.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtOpenGL.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtNfc.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtLocation.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMacExtras.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMultimedia.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaWidgets.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtDBus.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtConcurrent.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtCLucene.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMacExtras.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/lib/QtMacExtras.framework/Headers",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers",
+                "/Users/tony/Qt/5.7/clang_64/mkspecs/macx-clang",
+                "/Users/tony/Qt/5.7/clang_64/include"
+            ],
+
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Linux",
+            "includePath": ["/usr/include"],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": ["c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include"],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ]
+}

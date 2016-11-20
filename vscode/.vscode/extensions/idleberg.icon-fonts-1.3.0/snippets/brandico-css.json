@@ -1,0 +1,182 @@
+{
+  "brandico-amex": {
+    "body": "content: '\\\\f326';",
+    "prefix": "brandico-amex"
+  },
+  "brandico-bandcamp": {
+    "body": "content: '\\\\f32b';",
+    "prefix": "brandico-bandcamp"
+  },
+  "brandico-blogger": {
+    "body": "content: '\\\\f314';",
+    "prefix": "brandico-blogger"
+  },
+  "brandico-blogger-rect": {
+    "body": "content: '\\\\f315';",
+    "prefix": "brandico-blogger-rect"
+  },
+  "brandico-box": {
+    "body": "content: '\\\\f321';",
+    "prefix": "brandico-box"
+  },
+  "brandico-box-rect": {
+    "body": "content: '\\\\f322';",
+    "prefix": "brandico-box-rect"
+  },
+  "brandico-codepen": {
+    "body": "content: '\\\\f32c';",
+    "prefix": "brandico-codepen"
+  },
+  "brandico-deviantart": {
+    "body": "content: '\\\\f316';",
+    "prefix": "brandico-deviantart"
+  },
+  "brandico-diigo": {
+    "body": "content: '\\\\f320';",
+    "prefix": "brandico-diigo"
+  },
+  "brandico-discover": {
+    "body": "content: '\\\\f327';",
+    "prefix": "brandico-discover"
+  },
+  "brandico-facebook": {
+    "body": "content: '\\\\f300';",
+    "prefix": "brandico-facebook"
+  },
+  "brandico-facebook-rect": {
+    "body": "content: '\\\\f301';",
+    "prefix": "brandico-facebook-rect"
+  },
+  "brandico-friendfeed": {
+    "body": "content: '\\\\f312';",
+    "prefix": "brandico-friendfeed"
+  },
+  "brandico-friendfeed-rect": {
+    "body": "content: '\\\\f313';",
+    "prefix": "brandico-friendfeed-rect"
+  },
+  "brandico-github": {
+    "body": "content: '\\\\f308';",
+    "prefix": "brandico-github"
+  },
+  "brandico-github-text": {
+    "body": "content: '\\\\f307';",
+    "prefix": "brandico-github-text"
+  },
+  "brandico-googleplus-rect": {
+    "body": "content: '\\\\f309';",
+    "prefix": "brandico-googleplus-rect"
+  },
+  "brandico-houzz": {
+    "body": "content: '\\\\f32a';",
+    "prefix": "brandico-houzz"
+  },
+  "brandico-icq": {
+    "body": "content: '\\\\f304';",
+    "prefix": "brandico-icq"
+  },
+  "brandico-instagram": {
+    "body": "content: '\\\\f31e';",
+    "prefix": "brandico-instagram"
+  },
+  "brandico-instagram-filled": {
+    "body": "content: '\\\\f31f';",
+    "prefix": "brandico-instagram-filled"
+  },
+  "brandico-jabber": {
+    "body": "content: '\\\\f317';",
+    "prefix": "brandico-jabber"
+  },
+  "brandico-lastfm": {
+    "body": "content: '\\\\f318';",
+    "prefix": "brandico-lastfm"
+  },
+  "brandico-lastfm-rect": {
+    "body": "content: '\\\\f319';",
+    "prefix": "brandico-lastfm-rect"
+  },
+  "brandico-linkedin": {
+    "body": "content: '\\\\f31a';",
+    "prefix": "brandico-linkedin"
+  },
+  "brandico-linkedin-rect": {
+    "body": "content: '\\\\f31b';",
+    "prefix": "brandico-linkedin-rect"
+  },
+  "brandico-mastercard": {
+    "body": "content: '\\\\f329';",
+    "prefix": "brandico-mastercard"
+  },
+  "brandico-odnoklassniki": {
+    "body": "content: '\\\\f30c';",
+    "prefix": "brandico-odnoklassniki"
+  },
+  "brandico-odnoklassniki-rect": {
+    "body": "content: '\\\\f30d';",
+    "prefix": "brandico-odnoklassniki-rect"
+  },
+  "brandico-picasa": {
+    "body": "content: '\\\\f31c';",
+    "prefix": "brandico-picasa"
+  },
+  "brandico-skype": {
+    "body": "content: '\\\\f30b';",
+    "prefix": "brandico-skype"
+  },
+  "brandico-tudou": {
+    "body": "content: '\\\\f323';",
+    "prefix": "brandico-tudou"
+  },
+  "brandico-tumblr": {
+    "body": "content: '\\\\f311';",
+    "prefix": "brandico-tumblr"
+  },
+  "brandico-tumblr-rect": {
+    "body": "content: '\\\\f310';",
+    "prefix": "brandico-tumblr-rect"
+  },
+  "brandico-twitter": {
+    "body": "content: '\\\\f302';",
+    "prefix": "brandico-twitter"
+  },
+  "brandico-twitter-bird": {
+    "body": "content: '\\\\f303';",
+    "prefix": "brandico-twitter-bird"
+  },
+  "brandico-vimeo": {
+    "body": "content: '\\\\f30f';",
+    "prefix": "brandico-vimeo"
+  },
+  "brandico-vimeo-rect": {
+    "body": "content: '\\\\f30e';",
+    "prefix": "brandico-vimeo-rect"
+  },
+  "brandico-visa": {
+    "body": "content: '\\\\f328';",
+    "prefix": "brandico-visa"
+  },
+  "brandico-vkontakte-rect": {
+    "body": "content: '\\\\f30a';",
+    "prefix": "brandico-vkontakte-rect"
+  },
+  "brandico-win8": {
+    "body": "content: '\\\\f325';",
+    "prefix": "brandico-win8"
+  },
+  "brandico-wordpress": {
+    "body": "content: '\\\\f31d';",
+    "prefix": "brandico-wordpress"
+  },
+  "brandico-yandex": {
+    "body": "content: '\\\\f305';",
+    "prefix": "brandico-yandex"
+  },
+  "brandico-yandex-rect": {
+    "body": "content: '\\\\f306';",
+    "prefix": "brandico-yandex-rect"
+  },
+  "brandico-youku": {
+    "body": "content: '\\\\f324';",
+    "prefix": "brandico-youku"
+  }
+}
