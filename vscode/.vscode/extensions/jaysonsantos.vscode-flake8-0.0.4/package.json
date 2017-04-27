@@ -1,0 +1,51 @@
+{
+	"name": "vscode-flake8",
+	"description": "VSCode plugin for flake8",
+	"author": "Jayson Reis",
+	"license": "MIT",
+	"version": "0.0.4",
+	"publisher": "jaysonsantos",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Linters"
+	],
+	"activationEvents": [
+		"onLanguage:python"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Example configuration",
+			"properties": {
+				"flake8.maxNumberOfProblems": {
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the server."
+				}
+			}
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jaysonsantos/vscode-flake8"
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^1.1.0"
+	},
+	"__metadata": {
+		"id": "fe688efa-9cfc-4094-a110-f7b79793bc26",
+		"publisherId": "0e65ab83-d4d7-4d0d-a9da-7e315a7383df",
+		"publisherDisplayName": "jaysonsantos"
+	}
+}

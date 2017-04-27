@@ -1,0 +1,108 @@
+{
+/*
+	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log("$1");",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+	"x":
+    {"prefix": "x",
+    "body": "{{ $1 }}"},
+  "expr":
+    {"prefix": "expr",
+    "body": "{% $1 %}"},
+  "end":
+    {"prefix": "end",
+    "body": "{% end %}"},
+  "block":
+    {"prefix": "block",
+    "body": "{% block ${1} %}\n\t$2\n{% end %}"},
+  "comment":
+    {"prefix": "comment",
+    "body": "{% comment %}\n\t$1\n{% end %}"},
+  "apply":
+    {"prefix": "apply",
+    "body": "{% apply ${1} %}\n\t$2\n{% end %}"},
+  "csrf":
+    {"prefix": "csrf",
+    "body": "{% raw xsrf_form_html() %}"},
+  "elif":
+    {"prefix": "elif",
+    "body": "{% elif $1 %}"},
+  "else":
+    {"prefix": "else",
+    "body": "{% else %}"},
+  "try":
+    {"prefix": "try",
+    "body": "{% try $1 %}\n\t$2\n{% except $2 %}\n\t$2\n{% end %}"},
+  "finally":
+    {"prefix": "finally",
+    "body": "{% finally %}"},
+  "extends":
+    {"prefix": "extends",
+    "body": "{% extends '$1' %}"},
+  "for":
+    {"prefix": "for",
+    "body": "{% for $1 in $2 %}\n\t$3\n{% end %}"},
+  "while":
+    {"prefix": "while",
+    "body": "{% while $1 %}\n\t$3\n{% end %}"},
+  "if":
+    {"prefix": "if",
+    "body": "{% if $1 %}\n\t$2\n{% end %}"},
+  "include":
+    {"prefix": "include",
+    "body": "{% include '$1' %}"},
+  "import":
+    {"prefix": "import",
+    "body": "{% import $1 %}"},
+  "import_from":
+    {"prefix": "import_from",
+    "body": "{% from $1 import $2 %}"},
+  "module":
+    {"prefix": "module",
+    "body": "{% module $1 %}"},
+  "raw":
+    {"prefix": "raw",
+    "body": "{% raw $1 %}"},
+  "set":
+    {"prefix": "set",
+    "body": "{% set $1 = $2 %}"},
+  "static":
+    {"prefix": "static",
+    "body": "{{ static_url('$1') }}"},
+  "autoescape":
+    {"prefix": "autoescape",
+    "body": "{% autoescape $1 %}"},
+  "escape":
+    {"prefix": "escape",
+    "body": "{{ escape($1) }}"},
+  "urlescape":
+    {"prefix": "urlescape",
+    "body": "{{ url_escape($1) }}"},
+  "xhtml":
+    {"prefix": "xhtml",
+    "body": "{{ xhtml_escape($1) }}"},
+  "squeeze":
+   	{"prefix": "squeeze",
+    "body": "{{ squeeze($1) }}"},
+  "json":
+    {"prefix": "json",
+    "body": "{{ json_encode($1) }}"},
+  "with":
+    {"prefix": "with",
+    "body": "{% with ${1:var} as ${2:name} %}{{ ${3:$2} }}{% end %}"},
+  "whitespace":
+    {"prefix": "whitespace",
+    "body": "{% whitespace $1 %}"}
+
+}

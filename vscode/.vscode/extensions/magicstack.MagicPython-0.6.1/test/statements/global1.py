@@ -1,0 +1,11 @@
+global a, b, c
+
+
+
+global        : source.python, storage.modifier.declaration.python
+              : source.python
+a             : source.python
+,             : source.python
+b             : source.python
+,             : source.python
+c             : source.python

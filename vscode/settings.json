@@ -1,10 +1,32 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.tabSize": 4,
+    "editor.tabSize": 3,
+    "editor.useTabStops": true,
     "editor.renderIndentGuides": true,
     "files.autoSave": "onWindowChange",
     "html.format.wrapLineLength": 0,
     "typescript.format.insertSpaceAfterCommaDelimiter": false,
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
-    "terminal.integrated.shellArgs.osx": ["-l"]
+    "terminal.integrated.shellArgs.osx": ["-l"],
+    "python.pythonPath": "/usr/local/bin/python3",
+    "terminal.integrated.cursorBlinking": true,
+    "vsicons.dontShowNewVersionMessage": true,
+
+    // Compiler options for C++ (e.g. ['-std=c++11'])
+    "clang.cxxflags": ["-std=c++11"],
+
+
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.linter": "pyLint",
+
+    "python.autoComplete.addBrackets": true,
+   "workbench.statusBar.visible": true,
+   "window.zoomLevel": 0
+   // "python.autoComplete.extraPaths": [
+   //     "",
+   //     ""
+   // ],
 }

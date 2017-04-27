@@ -1,0 +1,62 @@
+{
+	"name": "tornado",
+	"displayName": "Tornado",
+	"description": "Tornado template support",
+	"keywords": [
+		"python",
+		"tornado",
+		"template",
+		"async"
+	],
+	"version": "0.0.1",
+	"icon": "icon.png",
+	"publisher": "abdelouahab",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abdelouahabb/vscode-tornado.git"
+	},
+	"bugs": {
+		"url": "https://github.com/abdelouahabb/vscode-tornado/issues"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "tornado",
+				"aliases": [
+					"HTML (Tornado)",
+					"tornado"
+				],
+				"extensions": [
+					".html",
+					".htm"
+				],
+				"configuration": "./tornado-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "tornado",
+				"scopeName": "text.html.django",
+				"path": "./syntaxes/tornado.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "tornado",
+				"path": "./snippets/tornado.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "84ff71ab-c97a-49d6-a95d-539c500884c0",
+		"publisherId": "4c4b7b9e-23ef-48c1-8531-9f077faf1bbd",
+		"publisherDisplayName": "abdelouahabb"
+	}
+}

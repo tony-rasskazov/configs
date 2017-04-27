@@ -107,11 +107,24 @@ if [ "$color_prompt" = yes ]; then
   reset=$(tput sgr0)
 
   PS1='\[$cyan\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$yellow\]\w\[$reset\]\[$pink\]$(__git_ps1 " [%s]")\[$reset\]\$ '
+  PS1_NO_COLOR='\u@\h:\w$(__git_ps1 " [%s]")\$ '
+  
 else
   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
-#unset color_prompt force_color_prompt
+unset color_prompt force_color_prompt
+
+alias mc=". /usr/local/opt/midnight-commander/libexec/mc/mc-wrapper.sh"
 
 source ~/homebrew_github_api_token
+
+#!!!
+
+#alias python='python3'
+#alias pip='pip3'
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:/Users/tony/Qt/5.7/clang_64/bin/:$PATH"
+eval "$(pyenv init -)"
 

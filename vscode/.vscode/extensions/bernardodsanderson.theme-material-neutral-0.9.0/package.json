@@ -1,0 +1,28 @@
+{
+	"name": "theme-material-neutral",
+	"displayName": "Material Neutral Theme",
+	"description": "A modified and updated Material Theme",
+	"version": "0.9.0",
+	"publisher": "bernardodsanderson",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Material Neutral",
+				"uiTheme": "vs-dark",
+				"path": "./themes/MaterialNeutral.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e5cd8e96-c6ae-482e-99ef-ab490fdb6951",
+		"publisherId": "fbdf55f2-5449-47b4-b427-8200fc7ba4b8",
+		"publisherDisplayName": "bernardodsanderson"
+	}
+}

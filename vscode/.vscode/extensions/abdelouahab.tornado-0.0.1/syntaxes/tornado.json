@@ -1,0 +1,49 @@
+{
+    "fileTypes": [],
+    "keyEquivalent": "^~D",
+    "name": "HTML (Tornado)",
+    "patterns": [
+        {
+            "comment": "Since html is valid in Tornado templates include the html patterns",
+            "include": "text.html.basic"
+        },
+        {
+            "begin": "{#",
+            "end": "#}",
+            "name": "comment.line.django.template"
+        },
+        {
+            "begin": "{{",
+            "end": "}}",
+            "name": "meta.tag.template.variable.django.template",
+            "patterns": [
+                {
+                    "match": "[\\S&&[^}]]+",
+                    "name": "variable.other.readwrite.django.template"
+                }
+            ]
+        },
+        {
+            "begin": "({%)",
+            "captures": {
+                "1": {
+                    "name": "entity.other.django.tagbraces"
+                }
+            },
+            "end": "(%})",
+            "name": "meta.scope.django.template.tag",
+            "patterns": [
+                {
+                    "match": "\\b(apply|comment|from|import|module|try|except|finally|while|end|with|block|extends|for|if|include|else|elif|escape|autoescape|urlescape|xhtml_escape|raw|set|xsrf_form_html|json_encode|squeeze|whitespace|static_url|and|or|not|in|by|as)\\b",
+                    "name": "keyword.control.django.template"
+                },
+                {
+                    "match": "[a-zA-Z_]+",
+                    "name": "string.unquoted.django.template.tag"
+                }
+            ]
+        }
+    ],
+    "scopeName": "text.html.django",
+    "uuid": "F4B0A70C-ECF6-4660-BC26-785216E3CF02"
+}

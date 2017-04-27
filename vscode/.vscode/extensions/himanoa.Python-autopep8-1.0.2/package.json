@@ -1,0 +1,36 @@
+{
+	"name": "Python-autopep8",
+	"displayName": "Python-autopep8",
+	"description": "This is a vscode-extension that applies autopep8 to your current file.",
+	"version": "1.0.2",
+	"publisher": "himanoa",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.sayHello"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.sayHello",
+				"title": "autopep8"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "d552b939-38e0-46cd-9295-8b7880b43d6c",
+		"publisherId": "2191c387-5ae6-499b-98fc-4c9cdd7f8799",
+		"publisherDisplayName": "himanoa"
+	}
+}

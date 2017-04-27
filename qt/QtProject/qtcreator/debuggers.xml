@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorDebuggers>
-<!-- Written by QtCreator 4.1.0, 2016-11-20T18:50:57. -->
+<!-- Written by QtCreator 4.2.1, 2017-04-27T19:18:14. -->
 <qtcreator>
  <data>
   <variable>DebuggerItem.0</variable>
   <valuemap type="QVariantMap">
    <valuelist type="QVariantList" key="Abis">
-    <value type="QString">x86-macos-generic-mach_o-64bit</value>
+    <value type="QString">x86-darwin-generic-mach_o-64bit</value>
    </valuelist>
    <value type="bool" key="AutoDetected">true</value>
    <value type="QString" key="AutoDetectionSource"></value>
@@ -14,16 +14,17 @@
    <value type="QString" key="DisplayName">System LLDB at /Applications/Xcode.app/Contents/Developer/usr/bin/lldb</value>
    <value type="int" key="EngineType">256</value>
    <value type="QString" key="Id">{f6d80dbe-d686-400d-8360-4cbb1bffcf19}</value>
-   <value type="QDateTime" key="LastModified">2016-08-29T05:34:47</value>
-   <value type="QString" key="Version">360.1.50
+   <value type="QDateTime" key="LastModified">2016-12-07T02:53:34</value>
+   <value type="QString" key="Version">360.1.70
 </value>
+   <value type="QString" key="WorkingDirectory"></value>
   </valuemap>
  </data>
  <data>
   <variable>DebuggerItem.1</variable>
   <valuemap type="QVariantMap">
    <valuelist type="QVariantList" key="Abis">
-    <value type="QString">x86-macos-generic-mach_o-64bit</value>
+    <value type="QString">x86-darwin-generic-mach_o-64bit</value>
    </valuelist>
    <value type="bool" key="AutoDetected">true</value>
    <value type="QString" key="AutoDetectionSource"></value>
@@ -31,9 +32,10 @@
    <value type="QString" key="DisplayName">System LLDB at /usr/bin/lldb</value>
    <value type="int" key="EngineType">256</value>
    <value type="QString" key="Id">{b2052f54-118a-47e9-a297-2a74c2b638bb}</value>
-   <value type="QDateTime" key="LastModified">2016-10-19T12:11:25</value>
-   <value type="QString" key="Version">360.1.65
+   <value type="QDateTime" key="LastModified">2017-03-23T02:57:02</value>
+   <value type="QString" key="Version">360.1.70
 </value>
+   <value type="QString" key="WorkingDirectory"></value>
   </valuemap>
  </data>
  <data>

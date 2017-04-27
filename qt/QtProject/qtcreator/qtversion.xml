@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorQtVersions>
-<!-- Written by QtCreator 4.1.0, 2016-11-20T18:50:56. -->
+<!-- Written by QtCreator 4.2.1, 2017-04-27T19:18:09. -->
 <qtcreator>
  <data>
   <variable>QtVersion.0</variable>
@@ -10,6 +10,50 @@
    <value type="QString" key="QMakePath">/Users/tony/Qt/5.7/clang_64/bin/qmake</value>
    <value type="QString" key="QtVersion.Type">Qt4ProjectManager.QtVersion.Desktop</value>
    <value type="QString" key="autodetectionSource">SDK.qt.57.clang_64</value>
+   <value type="bool" key="isAutodetected">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>QtVersion.1</variable>
+  <valuemap type="QVariantMap">
+   <value type="int" key="Id">2</value>
+   <value type="QString" key="Name">Qt %{Qt:Version} for iOS</value>
+   <value type="QString" key="QMakePath">/Users/tony/Qt/5.7/ios/bin/qmake</value>
+   <value type="QString" key="QtVersion.Type">Qt4ProjectManager.QtVersion.Ios</value>
+   <value type="QString" key="autodetectionSource">SDK.qt.57.ios</value>
+   <value type="bool" key="isAutodetected">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>QtVersion.2</variable>
+  <valuemap type="QVariantMap">
+   <value type="int" key="Id">3</value>
+   <value type="QString" key="Name">Qt %{Qt:Version} clang 64bit2</value>
+   <value type="QString" key="QMakePath">/Users/tony/Qt/5.4/clang_64/bin/qmake</value>
+   <value type="QString" key="QtVersion.Type">Qt4ProjectManager.QtVersion.Desktop</value>
+   <value type="QString" key="autodetectionSource">SDK.qt.54.clang_64</value>
+   <value type="bool" key="isAutodetected">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>QtVersion.3</variable>
+  <valuemap type="QVariantMap">
+   <value type="int" key="Id">4</value>
+   <value type="QString" key="Name">Qt %{Qt:Version} for iOS2</value>
+   <value type="QString" key="QMakePath">/Users/tony/Qt/5.4/ios/bin/qmake</value>
+   <value type="QString" key="QtVersion.Type">Qt4ProjectManager.QtVersion.Ios</value>
+   <value type="QString" key="autodetectionSource">SDK.qt.54.ios</value>
+   <value type="bool" key="isAutodetected">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>QtVersion.4</variable>
+  <valuemap type="QVariantMap">
+   <value type="int" key="Id">5</value>
+   <value type="QString" key="Name">Qt %{Qt:Version} clang 64bit3</value>
+   <value type="QString" key="QMakePath">/Users/tony/Qt/5.8/clang_64/bin/qmake</value>
+   <value type="QString" key="QtVersion.Type">Qt4ProjectManager.QtVersion.Desktop</value>
+   <value type="QString" key="autodetectionSource">SDK.qt.58.clang_64</value>
    <value type="bool" key="isAutodetected">true</value>
   </valuemap>
  </data>
