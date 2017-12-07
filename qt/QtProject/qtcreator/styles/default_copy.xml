@@ -15,9 +15,9 @@
   <style name="Occurrences.Unused" underlineColor="#808000" underlineStyle="SingleUnderline"/>
   <style name="Occurrences.Rename" background="#ff6464"/>
   <style name="Number" foreground="#148822"/>
-  <style name="String" foreground="#5b005d"/>
+  <style name="String" foreground="#bc6500"/>
   <style name="Type" foreground="#255882"/>
-  <style name="Local"/>
+  <style name="Local" foreground="#3b3b3b"/>
   <style name="Global" bold="true"/>
   <style name="Field" foreground="#4f005e"/>
   <style name="Static" foreground="#800080"/>
@@ -60,4 +60,5 @@
   <style name="Error" underlineColor="#ff0000" underlineStyle="SingleUnderline"/>
   <style name="ErrorContext" underlineColor="#ff0000" underlineStyle="DotLine"/>
   <style name="Declaration"/>
+  <style name="C_OUTPUT_ARGUMENT"/>
 </style-scheme>

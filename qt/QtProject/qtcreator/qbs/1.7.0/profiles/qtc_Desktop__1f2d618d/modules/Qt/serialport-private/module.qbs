@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtSerialPort.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtSerialPort.framework/Headers/5.7.1/QtSerialPort"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtSerialPort.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtSerialPort.framework/Headers/5.7.0/QtSerialPort"]
     cpp.libraryPaths: []
     
 }

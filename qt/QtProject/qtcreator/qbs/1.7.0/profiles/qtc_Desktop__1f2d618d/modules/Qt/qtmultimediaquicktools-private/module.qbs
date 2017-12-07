@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/QtMultimediaQuick_p"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/QtMultimediaQuick_p"
     cpp.defines: ["QT_QTMULTIMEDIAQUICKTOOLS_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers/5.7.1/QtMultimediaQuick_p"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtMultimediaQuick_p.framework/Headers/5.7.0/QtMultimediaQuick_p"]
     cpp.libraryPaths: []
     
 }

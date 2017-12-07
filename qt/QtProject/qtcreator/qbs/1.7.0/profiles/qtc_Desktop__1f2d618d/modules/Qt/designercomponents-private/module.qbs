@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/QtDesignerComponents"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/QtDesignerComponents"
     cpp.defines: ["QT_DESIGNERCOMPONENTS_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers/5.7.1/QtDesignerComponents"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtDesignerComponents.framework/Headers/5.7.0/QtDesignerComponents"]
     cpp.libraryPaths: []
     
 }

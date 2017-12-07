@@ -6,14 +6,14 @@ QtModule {
     Depends { name: "Qt"; submodules: ["core-private", "gui-private"]}
 
     hasLibrary: true
-    staticLibsDebug: ["qtfreetype_debug", "qtpng_debug", "z"]
-    staticLibsRelease: ["qtfreetype", "qtpng", "z"]
+    staticLibsDebug: ["qtfreetype_debug", "z"]
+    staticLibsRelease: ["qtfreetype", "z"]
     dynamicLibsDebug: []
     dynamicLibsRelease: []
     linkerFlagsDebug: []
     linkerFlagsRelease: []
-    frameworksDebug: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "AppKit", "OpenGL", "ApplicationServices", "AGL"]
-    frameworksRelease: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "AppKit", "OpenGL", "ApplicationServices", "AGL"]
+    frameworksDebug: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "QtDBus", "AppKit", "OpenGL", "ApplicationServices", "AGL"]
+    frameworksRelease: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "QtDBus", "AppKit", "OpenGL", "ApplicationServices", "AGL"]
     frameworkPathsDebug: ["/Users/tony/Qt/5.7/clang_64/lib"]
     frameworkPathsRelease: ["/Users/tony/Qt/5.7/clang_64/lib"]
     libNameForLinkerDebug: "Qt5PlatformSupport_debug"
@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/libQt5PlatformSupport_debug.a"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/libQt5PlatformSupport.a"
     cpp.defines: ["QT_PLATFORMSUPPORT_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport/5.7.1/QtPlatformSupport"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtPlatformSupport/5.7.0/QtPlatformSupport"]
     cpp.libraryPaths: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     isStaticLibrary: true
 }

@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtNetwork.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtNetwork.framework/Headers/5.7.1/QtNetwork"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtNetwork.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtNetwork.framework/Headers/5.7.0/QtNetwork"]
     cpp.libraryPaths: []
     
 }

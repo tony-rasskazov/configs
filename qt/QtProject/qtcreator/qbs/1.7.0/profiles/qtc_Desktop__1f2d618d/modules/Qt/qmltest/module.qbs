@@ -12,8 +12,8 @@ QtModule {
     dynamicLibsRelease: []
     linkerFlagsDebug: []
     linkerFlagsRelease: []
-    frameworksDebug: ["QtTest", "Security", "Foundation", "ApplicationServices", "IOKit", "QtCore", "DiskArbitration", "QtWidgets", "QtGui"]
-    frameworksRelease: ["QtTest", "Security", "Foundation", "ApplicationServices", "IOKit", "QtCore", "DiskArbitration", "QtWidgets", "QtGui"]
+    frameworksDebug: ["QtTest", "Security", "ApplicationServices", "IOKit", "QtCore", "DiskArbitration", "QtWidgets", "QtGui"]
+    frameworksRelease: ["QtTest", "Security", "ApplicationServices", "IOKit", "QtCore", "DiskArbitration", "QtWidgets", "QtGui"]
     frameworkPathsDebug: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     frameworkPathsRelease: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     libNameForLinkerDebug: "QtQuickTest"

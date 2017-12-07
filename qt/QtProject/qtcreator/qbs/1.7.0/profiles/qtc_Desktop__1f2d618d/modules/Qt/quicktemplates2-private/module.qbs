@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/QtQuickTemplates2"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/QtQuickTemplates2"
     cpp.defines: ["QT_QUICKTEMPLATES2_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers/5.7.1/QtQuickTemplates2"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickTemplates2.framework/Headers/5.7.0/QtQuickTemplates2"]
     cpp.libraryPaths: []
     
 }

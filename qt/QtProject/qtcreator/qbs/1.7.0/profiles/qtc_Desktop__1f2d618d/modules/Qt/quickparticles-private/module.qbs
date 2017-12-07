@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/QtQuickParticles"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/QtQuickParticles"
     cpp.defines: ["QT_QUICKPARTICLES_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers/5.7.1/QtQuickParticles"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtQuickParticles.framework/Headers/5.7.0/QtQuickParticles"]
     cpp.libraryPaths: []
     
 }

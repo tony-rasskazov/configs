@@ -12,8 +12,8 @@ QtModule {
     dynamicLibsRelease: []
     linkerFlagsDebug: []
     linkerFlagsRelease: []
-    frameworksDebug: ["Qt3DRender", "Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork", "QtConcurrent", "Qt3DInput", "QtGamepad", "Qt3DLogic"]
-    frameworksRelease: ["Qt3DRender", "Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork", "QtConcurrent", "Qt3DInput", "QtGamepad", "Qt3DLogic"]
+    frameworksDebug: ["Qt3DRender", "Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtConcurrent", "Qt3DInput", "Qt3DLogic"]
+    frameworksRelease: ["Qt3DRender", "Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtConcurrent", "Qt3DInput", "Qt3DLogic"]
     frameworkPathsDebug: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     frameworkPathsRelease: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     libNameForLinkerDebug: "Qt3DExtras"

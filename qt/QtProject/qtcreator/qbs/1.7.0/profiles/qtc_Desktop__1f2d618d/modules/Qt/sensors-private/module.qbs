@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtSensors.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtSensors.framework/Headers/5.7.1/QtSensors"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtSensors.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtSensors.framework/Headers/5.7.0/QtSensors"]
     cpp.libraryPaths: []
     
 }

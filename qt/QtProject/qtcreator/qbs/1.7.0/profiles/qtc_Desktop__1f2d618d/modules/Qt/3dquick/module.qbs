@@ -12,8 +12,8 @@ QtModule {
     dynamicLibsRelease: []
     linkerFlagsDebug: []
     linkerFlagsRelease: []
-    frameworksDebug: ["Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork", "QtQuick", "QtQml"]
-    frameworksRelease: ["Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork", "QtQuick", "QtQml"]
+    frameworksDebug: ["Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtQuick", "QtQml", "QtNetwork"]
+    frameworksRelease: ["Qt3DCore", "QtGui", "QtCore", "DiskArbitration", "IOKit", "QtQuick", "QtQml", "QtNetwork"]
     frameworkPathsDebug: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     frameworkPathsRelease: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     libNameForLinkerDebug: "Qt3DQuick"

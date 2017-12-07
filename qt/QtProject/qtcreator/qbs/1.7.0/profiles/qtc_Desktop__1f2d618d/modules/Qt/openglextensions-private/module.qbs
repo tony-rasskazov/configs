@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include/QtOpenGLExtensions/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtOpenGLExtensions/5.7.1/QtOpenGLExtensions"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include/QtOpenGLExtensions/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtOpenGLExtensions/5.7.0/QtOpenGLExtensions"]
     cpp.libraryPaths: []
     isStaticLibrary: true
 }

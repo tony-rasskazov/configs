@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/libQt5PacketProtocol_debug.a"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/libQt5PacketProtocol.a"
     cpp.defines: ["QT_PACKETPROTOCOL_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol/5.7.1/QtPacketProtocol"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtPacketProtocol/5.7.0/QtPacketProtocol"]
     cpp.libraryPaths: []
     isStaticLibrary: true
 }

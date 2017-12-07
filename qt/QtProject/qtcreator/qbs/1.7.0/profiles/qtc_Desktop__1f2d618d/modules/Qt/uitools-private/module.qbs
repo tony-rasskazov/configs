@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include/QtUiTools/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtUiTools/5.7.1/QtUiTools"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include/QtUiTools/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtUiTools/5.7.0/QtUiTools"]
     cpp.libraryPaths: []
     isStaticLibrary: true
 }

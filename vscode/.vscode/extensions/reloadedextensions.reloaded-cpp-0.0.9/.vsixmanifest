@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="reloaded-cpp" Version="0.0.9" Publisher="reloadedextensions"/>
+    <DisplayName>Reloaded C/C++</DisplayName>
+    <Description xml:space="preserve">C/C++ must-have highlighter that understands many coding styles and APIs. Use with &#39;Reloaded Themes&#39; extension.</Description>
+    <Tags>C/C++,C++,C,Syntax,Highlight,cpp,Cpp,__ext_.c,__ext_.cc,__ext_.cpp,__ext_.cxx,__ext_.h,__ext_.hh,__ext_.hpp,__ext_.hxx,__ext_.m,__ext_.mm,__ext_.inc,__ext_.inl,c++</Tags>
+    <Categories>Languages,Other</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="*" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/kobalicek/reloaded-cpp.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/kobalicek/reloaded-cpp.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/kobalicek/reloaded-cpp.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/kobalicek/reloaded-cpp/issues" />
+      
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

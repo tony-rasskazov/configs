@@ -3,7 +3,7 @@ import '../QtModule.qbs' as QtModule
 
 QtModule {
     qtModuleName: "3DCore"
-    Depends { name: "Qt"; submodules: ["core", "gui", "network"]}
+    Depends { name: "Qt"; submodules: ["core", "gui"]}
 
     hasLibrary: true
     staticLibsDebug: []
@@ -12,8 +12,8 @@ QtModule {
     dynamicLibsRelease: []
     linkerFlagsDebug: []
     linkerFlagsRelease: []
-    frameworksDebug: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork"]
-    frameworksRelease: ["QtGui", "QtCore", "DiskArbitration", "IOKit", "QtNetwork"]
+    frameworksDebug: ["QtGui", "QtCore", "DiskArbitration", "IOKit"]
+    frameworksRelease: ["QtGui", "QtCore", "DiskArbitration", "IOKit"]
     frameworkPathsDebug: ["/Users/tony/Qt/5.7/clang_64/lib"]
     frameworkPathsRelease: ["/Users/tony/Qt/5.7/clang_64/lib"]
     libNameForLinkerDebug: "Qt3DCore"

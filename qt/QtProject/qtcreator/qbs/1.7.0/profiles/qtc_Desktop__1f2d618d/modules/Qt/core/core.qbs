@@ -1,7 +1,6 @@
 import qbs 1.0
 import qbs.FileInfo
 import qbs.ModUtils
-import qbs.TextFile
 import qbs.Utilities
 import "moc.js" as Moc
 import "qdoc.js" as Qdoc
@@ -26,13 +25,13 @@ Module {
     property stringList qdocEnvironment
     property path docPath
     property stringList helpGeneratorArgs: versionMajor >= 5 ? ["-platform", "minimal"] : []
+    property string version
     property var versionParts: version ? version.split('.').map(function(item) { return parseInt(item, 10); }) : []
     property int versionMajor: versionParts[0]
     property int versionMinor: versionParts[1]
     property int versionPatch: versionParts[2]
     property bool frameworkBuild
     property bool staticBuild
-    property stringList pluginMetaData: []
 
     property stringList availableBuildVariants
     property string qtBuildVariant: {
@@ -74,17 +73,12 @@ Module {
 
     // These are deliberately not path types
     // We don't want to resolve them against the source directory
-    property string generatedHeadersDir: product.buildDirectory + "/qt.headers"
-    property string generatedFilesDir: generatedHeadersDir // TODO: Remove in 1.8
-    property string qdocOutputDir: product.buildDirectory + "/qdoc_html"
+    property string generatedFilesDir: product.buildDirectory + "/GeneratedFiles"
+    property string qdocOutputDir: FileInfo.joinPaths(generatedFilesDir, "html")
     property string qmDir: product.destinationDirectory
     property string qmBaseName: product.targetName
     property bool lreleaseMultiplexMode: false
 
-    cpp.entryPoint: qbs.targetOS.containsAny(["ios", "tvos"])
-                        && Utilities.versionCompare(version, "5.6.0") >= 0
-                    ? "_qt_main_wrapper"
-                    : undefined
     cpp.cxxLanguageVersion: Utilities.versionCompare(version, "5.7.0") >= 0 ? "c++11" : original
     cpp.defines: {
         var defines = ["QT_CORE_LIB"];
@@ -92,17 +86,14 @@ Module {
         //     from the build variant "release"
         if (!qbs.debugInformation)
             defines.push("QT_NO_DEBUG");
-        if (qbs.targetOS.containsAny(["ios", "tvos"])) {
+        if (qbs.targetOS.contains("ios"))
             defines = defines.concat(["DARWIN_NO_CARBON", "QT_NO_CORESERVICES", "QT_NO_PRINTER",
-                            "QT_NO_PRINTDIALOG"]);
-            if (Utilities.versionCompare(version, "5.6.0") < 0)
-                defines.push("main=qtmn");
-        }
+                            "QT_NO_PRINTDIALOG", "main=qtmn"]);
         return defines;
     }
     cpp.includePaths: {
         var paths = ["/Users/tony/Qt/5.7/clang_64/lib/QtCore.framework/Headers"];
-        paths.push(mkspecPath, generatedHeadersDir);
+        paths.push(mkspecPath, generatedFilesDir);
         return paths;
     }
     cpp.libraryPaths: {
@@ -199,8 +190,6 @@ Module {
         }, " is '" + qtBuildVariant + "', but qbs.buildVariant is '" + qbs.buildVariant
             + "', which is not allowed when using MSVC");
 
-        validator.addFileNameValidator("resourceFileBaseName", resourceFileBaseName);
-
         validator.validate();
     }
 
@@ -258,10 +247,10 @@ Module {
                 return [];
             var artifact = { fileTags: ["unmocable"] };
             if (input.fileTags.contains("hpp")) {
-                artifact.filePath = ModUtils.moduleProperty(product, "generatedHeadersDir")
+                artifact.filePath = ModUtils.moduleProperty(product, "generatedFilesDir")
                         + "/moc_" + input.completeBaseName + ".cpp";
             } else {
-                artifact.filePath = ModUtils.moduleProperty(product, "generatedHeadersDir")
+                artifact.filePath = ModUtils.moduleProperty(product, "generatedFilesDir")
                           + '/' + input.completeBaseName + ".moc";
             }
             artifact.fileTags.push(mocinfo.mustCompile ? "cpp" : "hpp");
@@ -278,62 +267,12 @@ Module {
         }
     }
 
-    property path resourceSourceBase
-    property string resourcePrefix: "/"
-    property string resourceFileBaseName: product.targetName
-    Rule {
-        multiplex: true
-        inputs: ["qt.core.resource_data"]
-        Artifact {
-            filePath: product.moduleProperty("Qt.core", "resourceFileBaseName") + ".qrc"
-            fileTags: ["qrc"]
-        }
-        prepare: {
-            var cmd = new JavaScriptCommand();
-            cmd.description = "generating " + output.fileName;
-            cmd.sourceCode = function() {
-                var qrcFile = new TextFile(output.filePath, TextFile.WriteOnly);
-                try {
-                    qrcFile.writeLine('<!DOCTYPE RCC>');
-                    qrcFile.writeLine('<RCC version="1.0">');
-
-                    var inputsByPrefix = {}
-                    for (var i = 0; i < inputs["qt.core.resource_data"].length; ++i) {
-                        var inp = inputs["qt.core.resource_data"][i];
-                        var prefix = inp.moduleProperty("Qt.core", "resourcePrefix");
-                        var inputsList = inputsByPrefix[prefix] || [];
-                        inputsList.push(inp);
-                        inputsByPrefix[prefix] = inputsList;
-                    }
-
-                    for (var prefix in inputsByPrefix) {
-                        qrcFile.writeLine('<qresource prefix="' + prefix + '">');
-                        for (var i = 0; i < inputsByPrefix[prefix].length; ++i) {
-                            var inp = inputsByPrefix[prefix][i];
-                            var fullResPath = inp.filePath;
-                            var baseDir = inp.moduleProperty("Qt.core", "resourceSourceBase");
-                            var resAlias = baseDir
-                                ? FileInfo.relativePath(baseDir, fullResPath) : inp.fileName;
-                            qrcFile.writeLine('<file alias="' + resAlias + '">'
-                                              + fullResPath + '</file>');
-                        }
-                        qrcFile.writeLine('</qresource>');
-                    }
-
-                    qrcFile.writeLine('</RCC>');
-                } finally {
-                    qrcFile.close();
-                }
-            };
-            return [cmd];
-        }
-    }
-
     Rule {
         inputs: ["qrc"]
 
         Artifact {
-            filePath: "qrc_" + input.completeBaseName + ".cpp"
+            filePath: ModUtils.moduleProperty(product, "generatedFilesDir")
+                      + "/qrc_" + input.completeBaseName + ".cpp";
             fileTags: ["cpp"]
         }
         prepare: {
@@ -398,7 +337,8 @@ Module {
         inputs: "qhp"
 
         Artifact {
-            filePath: input.completeBaseName + ".qch"
+            filePath: ModUtils.moduleProperty(product, "generatedFilesDir")
+                      + '/' + input.completeBaseName + ".qch"
             fileTags: ["qch"]
         }
 

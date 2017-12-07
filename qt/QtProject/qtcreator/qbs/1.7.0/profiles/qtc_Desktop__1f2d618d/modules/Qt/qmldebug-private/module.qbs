@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: "/Users/tony/Qt/5.7/clang_64/lib/libQt5QmlDebug_debug.a"
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/libQt5QmlDebug.a"
     cpp.defines: ["QT_QMLDEBUG_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug/5.7.1/QtQmlDebug"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDebug/5.7.0/QtQmlDebug"]
     cpp.libraryPaths: ["/Users/tony/Qt/5.7/clang_64/lib", "/Users/tony/Qt/5.7/clang_64/lib"]
     isStaticLibrary: true
 }

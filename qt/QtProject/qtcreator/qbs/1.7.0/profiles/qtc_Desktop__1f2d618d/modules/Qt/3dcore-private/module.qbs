@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/Qt3DCore.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/Qt3DCore.framework/Headers/5.7.1/Qt3DCore"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/Qt3DCore.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/Qt3DCore.framework/Headers/5.7.0/Qt3DCore"]
     cpp.libraryPaths: []
     
 }

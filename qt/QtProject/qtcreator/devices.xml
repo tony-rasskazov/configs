@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorDevices>
-<!-- Written by QtCreator 4.2.1, 2017-04-27T19:18:14. -->
+<!-- Written by QtCreator 4.2.0, 2017-12-07T08:22:11. -->
 <qtcreator>
  <data>
   <variable>DeviceManager</variable>
   <valuemap type="QVariantMap">
    <valuemap type="QVariantMap" key="DefaultDevices">
     <value type="QString" key="Desktop">Desktop Device</value>
+    <value type="QString" key="GenericLinuxOsType">{bd0315c2-7ea5-43c6-871a-b15a184df9a0}</value>
     <value type="QString" key="Ios.Device.Type">iOS Device 1283a133efaf5c385db6884586b4bc88687f4b80</value>
     <value type="QString" key="Ios.Simulator.Type">iOS Simulator Device </value>
    </valuemap>
@@ -31,22 +32,98 @@
      <value type="int" key="Version">0</value>
     </valuemap>
     <valuemap type="QVariantMap">
-     <value type="int" key="Authentication">1</value>
+     <value type="int" key="Authentication">3</value>
      <value type="QString" key="DebugServerKey"></value>
-     <value type="QString" key="FreePortsSpec"></value>
-     <value type="QString" key="Host"></value>
+     <value type="QString" key="FreePortsSpec">10000-10100</value>
+     <value type="QString" key="Host">192.168.0.168</value>
      <value type="int" key="HostKeyChecking">0</value>
-     <value type="QString" key="InternalId">iOS Simulator Device </value>
+     <value type="QString" key="InternalId">{bd0315c2-7ea5-43c6-871a-b15a184df9a0}</value>
      <value type="QString" key="KeyFile"></value>
-     <value type="QString" key="Name">iOS Simulator</value>
-     <value type="int" key="Origin">1</value>
-     <value type="QString" key="OsType">Ios.Simulator.Type</value>
-     <value type="QString" key="Password"></value>
-     <value type="int" key="SshOptions">3</value>
-     <value type="int" key="SshPort">0</value>
-     <value type="int" key="Timeout">0</value>
-     <value type="int" key="Type">1</value>
-     <value type="QString" key="Uname"></value>
+     <value type="QString" key="Name">2gi 192.168.0.168</value>
+     <value type="int" key="Origin">0</value>
+     <value type="QString" key="OsType">GenericLinuxOsType</value>
+     <value type="QString" key="Password">1</value>
+     <value type="int" key="SshOptions">1</value>
+     <value type="int" key="SshPort">22</value>
+     <value type="int" key="Timeout">10</value>
+     <value type="int" key="Type">0</value>
+     <value type="QString" key="Uname">root</value>
+     <value type="int" key="Version">0</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <value type="int" key="Authentication">3</value>
+     <value type="QString" key="DebugServerKey">/usr/bin/gdbserver</value>
+     <value type="QString" key="FreePortsSpec">10000-10100</value>
+     <value type="QString" key="Host">192.168.0.167</value>
+     <value type="int" key="HostKeyChecking">0</value>
+     <value type="QString" key="InternalId">{bbd18dd4-cf6d-47b3-aaae-eccc0c08e6ea}</value>
+     <value type="QString" key="KeyFile"></value>
+     <value type="QString" key="Name">2gi 192.168.0.167</value>
+     <value type="int" key="Origin">0</value>
+     <value type="QString" key="OsType">GenericLinuxOsType</value>
+     <value type="QString" key="Password">1</value>
+     <value type="int" key="SshOptions">1</value>
+     <value type="int" key="SshPort">22</value>
+     <value type="int" key="Timeout">10</value>
+     <value type="int" key="Type">0</value>
+     <value type="QString" key="Uname">root</value>
+     <value type="int" key="Version">0</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <value type="int" key="Authentication">3</value>
+     <value type="QString" key="DebugServerKey">/usr/bin/gdbserver</value>
+     <value type="QString" key="FreePortsSpec">10000-10100</value>
+     <value type="QString" key="Host">x169</value>
+     <value type="int" key="HostKeyChecking">0</value>
+     <value type="QString" key="InternalId">{c5e85896-0536-431b-897c-29258b98b78f}</value>
+     <value type="QString" key="KeyFile"></value>
+     <value type="QString" key="Name">192.168.0.169</value>
+     <value type="int" key="Origin">0</value>
+     <value type="QString" key="OsType">GenericLinuxOsType</value>
+     <value type="QString" key="Password">1</value>
+     <value type="int" key="SshOptions">1</value>
+     <value type="int" key="SshPort">22</value>
+     <value type="int" key="Timeout">10</value>
+     <value type="int" key="Type">0</value>
+     <value type="QString" key="Uname">root</value>
+     <value type="int" key="Version">0</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <value type="int" key="Authentication">3</value>
+     <value type="QString" key="DebugServerKey"></value>
+     <value type="QString" key="FreePortsSpec">10000-10100</value>
+     <value type="QString" key="Host">192.168.10.168</value>
+     <value type="int" key="HostKeyChecking">0</value>
+     <value type="QString" key="InternalId">{0dc7f137-81ce-4d1e-923e-0b03fc3d007a}</value>
+     <value type="QString" key="KeyFile"></value>
+     <value type="QString" key="Name">192.168.10.168</value>
+     <value type="int" key="Origin">0</value>
+     <value type="QString" key="OsType">GenericLinuxOsType</value>
+     <value type="QString" key="Password">1</value>
+     <value type="int" key="SshOptions">1</value>
+     <value type="int" key="SshPort">22</value>
+     <value type="int" key="Timeout">10</value>
+     <value type="int" key="Type">0</value>
+     <value type="QString" key="Uname">root</value>
+     <value type="int" key="Version">0</value>
+    </valuemap>
+    <valuemap type="QVariantMap">
+     <value type="int" key="Authentication">3</value>
+     <value type="QString" key="DebugServerKey"></value>
+     <value type="QString" key="FreePortsSpec">10000-10100</value>
+     <value type="QString" key="Host">x213</value>
+     <value type="int" key="HostKeyChecking">0</value>
+     <value type="QString" key="InternalId">{9af90dd7-e42d-49fc-99f0-0c5c82e18aa3}</value>
+     <value type="QString" key="KeyFile"></value>
+     <value type="QString" key="Name">smh4 x213</value>
+     <value type="int" key="Origin">0</value>
+     <value type="QString" key="OsType">GenericLinuxOsType</value>
+     <value type="QString" key="Password">1</value>
+     <value type="int" key="SshOptions">1</value>
+     <value type="int" key="SshPort">22</value>
+     <value type="int" key="Timeout">10</value>
+     <value type="int" key="Type">0</value>
+     <value type="QString" key="Uname">root</value>
      <value type="int" key="Version">0</value>
     </valuemap>
    </valuelist>

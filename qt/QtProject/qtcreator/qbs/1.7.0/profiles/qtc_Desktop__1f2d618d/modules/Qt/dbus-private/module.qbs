@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: ""
     cpp.defines: []
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtDBus.framework/Headers/5.7.1", "/Users/tony/Qt/5.7/clang_64/lib/QtDBus.framework/Headers/5.7.1/QtDBus"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/lib/QtDBus.framework/Headers/5.7.0", "/Users/tony/Qt/5.7/clang_64/lib/QtDBus.framework/Headers/5.7.0/QtDBus"]
     cpp.libraryPaths: []
     
 }

@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/libQt5QmlDevTools.a"
     cpp.defines: ["QT_QMLDEVTOOLS_LIB"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools/5.7.1/QtQmlDevTools"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtQmlDevTools/5.7.0/QtQmlDevTools"]
     cpp.libraryPaths: []
     isStaticLibrary: true
 }

@@ -21,7 +21,7 @@ QtModule {
     libFilePathDebug: ""
     libFilePathRelease: "/Users/tony/Qt/5.7/clang_64/lib/libQt5Bootstrap.a"
     cpp.defines: ["QT_BOOTSTRAP_LIB", "QT_BOOTSTRAPPED", "QT_LITE_UNICODE", "QT_NO_CAST_TO_ASCII", "QT_NO_CODECS", "QT_NO_DATASTREAM", "QT_NO_LIBRARY", "QT_NO_QOBJECT", "QT_NO_SYSTEMLOCALE", "QT_NO_THREAD", "QT_NO_UNICODETABLES", "QT_NO_USING_NAMESPACE", "QT_NO_DEPRECATED", "QT_NO_TRANSLATION"]
-    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtCore", "/Users/tony/Qt/5.7/clang_64/include/QtCore/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtCore/5.7.1/QtCore", "/Users/tony/Qt/5.7/clang_64/include/QtXml", "/Users/tony/Qt/5.7/clang_64/include/QtXml/5.7.1", "/Users/tony/Qt/5.7/clang_64/include/QtXml/5.7.1/QtXml"]
+    cpp.includePaths: ["/Users/tony/Qt/5.7/clang_64/include", "/Users/tony/Qt/5.7/clang_64/include/QtCore", "/Users/tony/Qt/5.7/clang_64/include/QtCore/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtCore/5.7.0/QtCore", "/Users/tony/Qt/5.7/clang_64/include/QtXml", "/Users/tony/Qt/5.7/clang_64/include/QtXml/5.7.0", "/Users/tony/Qt/5.7/clang_64/include/QtXml/5.7.0/QtXml"]
     cpp.libraryPaths: []
     isStaticLibrary: true
 }
